@@ -1,0 +1,69 @@
+// //q1
+// function calculateProduct(num1:number,num2:number){
+// return num1*num2
+// }
+// // calculateProduct(5,10);
+// let product=calculateProduct(5,10);
+// console.log(product);
+
+
+// //q2 default parameters
+// function greet(name:string,greeting:string="Hello"){
+//     return (`${greeting},${name}`);}
+
+// console.log(greet("ameen"));
+// console.log(greet("zia","hi"));
+
+// //q3
+// //first method
+// let  add=()=>3+4;   //variable declaration
+// let response:number=add(); //calling function
+// console.log(response); //printing the response
+// //second method
+// let add2=(a:number,b:number):number=>(a+b);
+// let response2:number=add2(3,4); //calling function
+// console.log(response2); //printing the response
+// //method3
+// let add3=(a:number,b:number):number=>{return a+b};
+// let response3:number=add3(3,4); //calling function
+// console.log(response3); //printing the response
+// // //method 4
+// let add4=()=>{
+//     let addition =3+5+7;
+//     return addition
+// }
+// let response4:number=add();
+// console.log(response4);
+
+
+// // //q4 rest parameter
+// function sumAll(num1:number,...nums:number[]){
+// console.log(num1);
+// console.log(nums);
+// let sum=num1+nums.reduce((a,b)=>a+b+0);
+// return sum
+// }
+// let result=sumAll(1,2,3);
+// let result2=sumAll(10,20,30,40,50);
+// console.log(result);
+// console.log(result2);
+
+// //q5
+// function multiplier(num1:number){
+//  let innerfunction=function(num2:number){
+//     return num1*num2;
+//  };
+//  return innerfunction; //The multiplier function needs to return the innerfunction so that it can be called later.
+// }
+// multiplier(4);
+// let triple=multiplier(3);
+// console.log(triple(6));
+
+// //q6
+// function factorial(n:number):number{
+//     if(n===0){
+//         return 1;
+//     }
+//     return n*factorial(n-1);
+
+//   };
