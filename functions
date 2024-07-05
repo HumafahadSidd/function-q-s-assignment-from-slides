@@ -67,3 +67,15 @@
 //     return n*factorial(n-1);
 
 //   };
+//q callback delay
+ setTimeout(function() {
+    console.log("Retrieving data from database");
+}, 0);
+
+let simulateDelay = () => {
+    console.log("Data Retrieved");
+};
+
+// Call simulateDelay function after 2 seconds
+setTimeout(simulateDelay,2000);
+
